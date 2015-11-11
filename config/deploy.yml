@@ -1,0 +1,4 @@
+host: ol
+user: bts
+repository: git@github.com:cryptonomex/faucet.git
+branch: master
