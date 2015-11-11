@@ -5,4 +5,3 @@
 /.idea
 config/secrets.yml
 config/faucet.yml
-public/wallet*
