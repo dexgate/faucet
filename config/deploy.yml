@@ -1,4 +1,4 @@
 host: ol
 user: bts
-repository: git@github.com:cryptonomex/faucet.git
-branch: master
+repository: git@gitlab.bitshares.org:valzav/faucet.git
+branch: ol
