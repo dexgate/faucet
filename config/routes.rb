@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :widgets do
         get 'w'
         get 'action'
-        get 'get_current_user'
+        #get 'get_current_user'
     end
 
     namespace :api do
