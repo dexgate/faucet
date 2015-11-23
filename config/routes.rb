@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
     root 'wallet#index'
+    get '/refscoreboard', to: 'welcome#refscoreboard'
 
     resources :widgets do
         get 'w'

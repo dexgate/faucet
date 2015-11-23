@@ -52,7 +52,7 @@ class WidgetsController < ApplicationController
     end
 
     def sanitize_sparam(sp, len=nil)
-        return nil if not (sp and sp.length > 0)
+        return '' if not (sp and sp.length > 0)
         if len
             sanitize_str(sp[0][0..(len-1)])
         else

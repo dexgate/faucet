@@ -78,9 +78,9 @@ Rails.application.configure do
     config.active_record.dump_schema_after_migration = false
 
     Rails.application.config.middleware.use ExceptionNotification::Rack,
-        :ignore_exceptions => ['ActionView::MissingTemplate'] + ExceptionNotifier.ignored_exceptions,
+        :ignore_exceptions => ['ActionView::MissingTemplate', 'ActionController::InvalidAuthenticityToken'] + ExceptionNotifier.ignored_exceptions,
         :email => {
-            :email_prefix => '[PREFIX] OL',
+            :email_prefix => '[OL]',
             :sender_address => config.faucet.exception_notification['sender_address'],
             :exception_recipients => config.faucet.exception_notification['exception_recipients']
         }
