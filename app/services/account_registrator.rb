@@ -57,7 +57,7 @@ class AccountRegistrator
         else
             @logger.debug(result.inspect)
             res[:result] = result
-            GrapheneCli.instance.exec('transfer', [registrar_account, account_name, '1000', 'QBITS', 'Welcome to OpenLedger. Read more about Qbits under asset', true])
+            # GrapheneCli.instance.exec('transfer', [registrar_account, account_name, '1000', 'QBITS', 'Welcome to OpenLedger. Read more about Qbits under asset', true])
         end
         return res
     end

@@ -67,6 +67,7 @@ class WebSocketRpc
 
     def on_close
         @logger.info "Closed connection to '#{@ws_server}'" if @logger
+        @web_socket = nil
         @connection_promise.reject('closed') if @connection_promise.pending?
     end
 

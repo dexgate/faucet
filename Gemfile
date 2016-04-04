@@ -45,7 +45,6 @@ group :development do
 end
 
 gem 'aasm'
-gem 'devise'
 gem 'faye-websocket'
 gem 'promise.rb' # see https://github.com/lgierth/promise.rb
 gem 'email_validator'
